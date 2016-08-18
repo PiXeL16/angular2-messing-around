@@ -3,7 +3,7 @@
     <h1>Artist Directory</h1>
     <label *ngIf="query">search for: {{query}}</label>
     <input
-      [(ngModel)]="query" placeholder="type in search term"
+      [(ngModel)]="query" (click)="currentPet=''" placeholder="type in search term"
       />
 </div>
 </div>
